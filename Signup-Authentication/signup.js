@@ -128,63 +128,6 @@ const validateconfirmPassword = (confirmPassword) => {
 };
 
 
-//6. submitting the form to the backend server
-/*const submitDataToBackend = async () => {
-    // 1. Prepare the Data Payload (We only send the necessary inputs)
-    const formData = {
-        name: nameInput.value,
-        email: emailInput.value,
-        password: passwordInput.value // Send the plaintext password for the server to hash
-    };
-
-    const API_ENDPOINT = '/api/auth/signup'; // Example: Replace with your actual endpoint
-
-    // Re-enable the submit button in case of failure or success
-    const reEnableButton = (text, disabled) => {
-        submitButton.textContent = text;
-        submitButton.disabled = disabled;
-    };
-
-    try {
-        const response = await fetch(API_ENDPOINT, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
-
-        // 3. Process the Response
-        const data = await response.json();
-
-        if (response.ok) { // HTTP status 200-299 (Success)
-            // Handle success (Step 7: Success)
-            console.log('Account created successfully!', data);
-
-            // Example: Store the token and redirect
-            localStorage.setItem('authToken', data.token);
-            // window.location.href = '/dashboard'; 
-
-            reEnableButton('Account Created!', true); // Keep disabled after successful redirect
-            alert('Success! Redirecting to dashboard...');
-
-        } else { // HTTP status 400+ (Failure)
-            // Handle server-side validation failures (e.g., Email already exists)
-            console.error('Server Error:', data.message);
-
-            // Display error to user (e.g., general error message or specific email error)
-            alert(`Signup failed: ${data.message || 'An unknown error occurred.'}`);
-
-            reEnableButton('Create Account', false); // Re-enable for the user to try again
-        }
-
-    } catch (error) {
-        // Handle network errors (e.g., server is down)
-        console.error('Network Error:', error);
-        alert('Could not connect to the server. Please check your connection.');
-        reEnableButton('Create Account', false); // Re-enable
-    }
-};*/
 
 //6. working on the password toggle visibility feature
 const togglePasswordVisibility = () => {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--icon-->
+    <link rel="shortcut icon" href="../Images/IMG_0130.png" type="image/x-icon">
+
+    <!--css-->
+    <link rel="stylesheet" href="/Forgot-password-Authentication/forgotpwd.css">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--text fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Trakka</title>
+</head>
+
+<body>
+    <!--container-->
+    <div>
+        <div class="back_btn_container">
+            <a href="#" class="back_btn"> <i class="fa-solid fa-arrow-left"></i> Back</button>
+        </div>
+
+        <!--form container-->
+        <form class="form_container" action="#" method="post" id="signup-form">
+            <div class="form_header">
+                <h2 class="form_header_h2">Trakka</h2>
+                <p class="form_header_p">Reset Password</p>
+                <span class="form_header_span">Enter your email to receive a reset link.</span>
+            </div>
+
+            <div class="form_main">
+
+                <div class="form_input_div">
+                    <label class="form_input_label" for="email">Email address</label>
+                    <input class="form_input" type="email" id="email" name="email"
+                        placeholder="Enter your email address" required>
+                    <span id="email-error"></span>
+                </div>
+
+                <a href="/Verification-Authentication/verify.html" class="form_btn" id="submit-button"
+                    type="submit">Send Reset Link</a>
+
+
+                <div class="form_footer">
+                    <p class="form_footer_p ">Remember your password? <a class="form_footer_link"
+                            href="/Login-Authentication/login.html">Login</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </form>
+
+
+    </div>
+
+</body>
+<script src="/Forgot-password-Authentication/forgotpwd.js"></script>
+
+</html>
