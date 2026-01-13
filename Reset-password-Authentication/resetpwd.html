@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--icon-->
+    <link rel="shortcut icon" href="../Images/IMG_0130.png" type="image/x-icon">
+
+    <!--css-->
+    <link rel="stylesheet" href="/Reset-password-Authentication/resetpwd.css">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--text fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Trakka</title>
+</head>
+
+<body>
+
+    <!--container-->
+    <div>
+        <div class="back_btn_container">
+            <a href="#" class="back_btn"> <i class="fa-solid fa-arrow-left"></i> Back</button>
+        </div>
+
+        <!--form container-->
+        <form class="form_container" action="#" method="post" id="signup-form">
+            <div class="form_header">
+                <h2 class="form_header_h2">Trakka</h2>
+                <p class="form_header_p">Change Password</p>
+                <span class="form_header_span">Change password to secure access to your account.</span>
+            </div>
+
+            <div class="form_main">
+                <div class="form_input_div password_div">
+                    <label class="form_input_label" for="password">Enter Password</label>
+                    <div class="password_input_container">
+                        <input class="form_input" type="password" name="password" id="password"
+                            placeholder="Enter your password" required>
+
+                        <span class="password-toggle" id="toggle-password">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </span>
+                    </div>
+                    <span id="password-error" class="error-message">
+                        Password missing requirements:
+                        <ul>
+                            <li>At least one capital letter</li>
+                            <li>At least seven small letters</li>
+                            <li>At least one number</li>
+                            <li>At least one special character</li>
+                            <li>Minimum of 10 characters</li>
+                        </ul>
+                    </span>
+                </div>
+
+
+                <div class="form_input_div cpassword_div">
+                    <label class="form_input_label" for="confirm-password">Confirm password</label>
+                    <div class="password_input_container">
+                        <input class="form_input" type="password" name="cpassword" id="cpassword"
+                            placeholder="Re-enter your password" required>
+
+                        <span class="password-toggle" id="toggle-cpassword">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </span>
+                    </div>
+                    <span id="cpassword-error"></span>
+                </div>
+
+
+
+                <button class="form_btn" id="submit-button" type="submit">Submit</button>
+
+            </div>
+
+
+
+        </form>
+
+
+    </div>
+
+</body>
+
+<script src="/Reset-password-Authentication/resetpwd.js"></script>
+
+</html>

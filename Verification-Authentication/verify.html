@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--icon-->
+    <link rel="shortcut icon" href="../Images/IMG_0130.png" type="image/x-icon">
+
+    <!--css-->
+    <link rel="stylesheet" href="/Verification-Authentication/verify.css">
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--text fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Trakka</title>
+</head>
+
+<body>
+    <!--container-->
+    <div>
+        <div class="back_btn_container">
+            <a href="#" class="back_btn"> <i class="fa-solid fa-arrow-left"></i> Back</button>
+        </div>
+
+        <!--form container-->
+        <form class="form_container" action="#" method="post" id="verify-form">
+
+            <div class="form_header">
+                <h2 class="form_header_h2">Trakka</h2>
+                <p class="form_header_p">Verify your Email</p>
+                <span class="form_header_span">Enter the 6 digit code sent to your email.</span>
+            </div>
+
+            <div class="otp_inputs">
+                <input class="otp_box" type="text" maxlength="1" inputmode="numeric" autocomplete="one-time-code"
+                    pattern="\d{1}">
+                <input class="otp_box" type="text" maxlength="1" inputmode="numeric" pattern="\d{1}">
+                <input class="otp_box" type="text" maxlength="1" inputmode="numeric" pattern="\d{1}">
+                <input class="otp_box" type="text" maxlength="1" inputmode="numeric" pattern="\d{1}">
+                <input class="otp_box" type="text" maxlength="1" inputmode="numeric" pattern="\d{1}">
+                <input class="otp_box" type="text" maxlength="1" inputmode="numeric" pattern="\d{1}">
+            </div>
+
+            <div class="form_timestamp">
+                <p class="form_timestamp_p">Code expires in <span id="timer">00:60</span></p>
+            </div>
+
+            <button class="form_btn" id="submit-button" type="submit">
+                <span id="btn_text">Verify Email</span>
+                <i id="btn-spinner" class="fas fa-spinner fa-spin"></i>
+            </button>
+
+            <div class="form_footer">
+                <p class="form_footer_p">Didn't get the code?</p>
+                <a href="#" class="form_footer_link">Resend</a>
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+
+</body>
+<script src="/Verification-Authentication/verify.js"></script>
+
+</html>
